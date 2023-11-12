@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padrão de Asteriscos</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+       
+        function criarPadrao() {
+            let resultado = '';
+            for (let i = 1; i <= 5; i++) {
+                let row = '';
+                for (let j = 1; j <= i; j++) {
+                    row += '*';
+                }
+                resultado += row + '<br>'; 
+            }
+            return resultado;
+        }
+
+       
+        const divOutput = document.getElementById('output');
+        divOutput.innerHTML = criarPadrao();
+    </script>
+</body>
+</html>
